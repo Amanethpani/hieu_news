@@ -13,7 +13,6 @@ const options = {
       const $ = cheerio.load(html);
       const articles = [];
       let i=0;
-      // select only the 3rd article on the page
       $('.col-md-6').each((i, element) => {
         if(i==2)
         {
@@ -38,7 +37,6 @@ const options = {
                  const inputString = `${title}`
                  const newstitle = inputString.replace("Read More..", "*");
                  const input = `${fullNews}`
-                 //const newsout = input.replace('<div id="taboola-mid-article-thumbnails"></div>', '');
                  const newsartical = input.replace('<div id="taboola-mid-article-thumbnails"></div>', '').replace(/<br><br>/g, " ").replace(/<br><br><em><strong>/g, " ").replace('</strong></em> <br><br></br>', " ").replace('</strong></em><br><em><strong>', " ").replace('</strong></em><br><em><strong>', " ");
     
           }
