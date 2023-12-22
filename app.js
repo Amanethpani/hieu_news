@@ -13,7 +13,7 @@ const options = {
       const $ = cheerio.load(html);
       const articles = [];
       let i=0;
-      // select only the 3rd article on the page
+     
       $('.col-md-6').each((i, element) => {
         if(i==2)
         {
@@ -50,18 +50,8 @@ const options = {
     
           }
     
-    
-    
-    
-    
-    
-    
     });
       
-
-
-
-
     } else {
       console.log(`Error: ${error}`);
       console.log(`Status code: ${response.statusCode}`);
