@@ -24,10 +24,10 @@ const options = {
           const image = $(element).find('img').attr('src');
   
           articles.push({ title, link, summary, image_link,image });
-          console.log(articles[0]);
+          //console.log(articles[0]);
           const parts = link.split('/');
             const desiredPart = parts[parts.length - 2];
-            console.log(desiredPart);
+            //console.log(desiredPart);
         }
         i++;
       
